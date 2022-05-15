@@ -55,3 +55,8 @@ the service will be started on http://localhost:8000 , you can access to the dif
 	"price": 99.00
    }
    ```
+   - GET: /users:  (user authentication required)
+   returns an array of users, each user object has its username and email
+    ```
+    http://localhost:8000/users
+    ```
