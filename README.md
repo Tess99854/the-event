@@ -10,7 +10,7 @@ $ pip install -r requirements.txt
 ```
 $ python manage.py runserver 
 ```
-the service will be started on http://localhost:8000 , you can access to the different endpoints throught this url.
+the service will be started on http://localhost:8000 , you can access the different endpoints throught this url.
 
 ### Available Endpoints
 
@@ -40,6 +40,7 @@ the service will be started on http://localhost:8000 , you can access to the dif
   the response will contain an access token that can be used to authenticate the users later when added to the request headers.
   
  - GET: /tickets:  (no authentication required)
+ 
    returns an array of tickets, each ticket object has its type and price 
     ```
     http://localhost:8000/tickets
@@ -56,6 +57,7 @@ the service will be started on http://localhost:8000 , you can access to the dif
    }
    ```
  - GET: /users:  (user authentication required)
+ 
    returns an array of users, each user object has its username and email
     ```
     http://localhost:8000/users
