@@ -22,6 +22,7 @@ def get_tickets(request) -> Response:
 
 
 @api_view(['GET'])
+@permission_classes([AllowAny])
 def get_users(request) -> Response:
     users = User.objects.all()
     serializer = serializers.UserSerializer(users, many=True, exclude=('password',))
